@@ -1,4 +1,8 @@
 Django==1.8.14
+<<<<<<< HEAD
+=======
+django-debug-toolbar==1.4
+>>>>>>> 2d572cce46610ac0c38e17a27ff7e202df294a4e
 django-oidc-provider==0.3.6
 future==0.15.2
 gunicorn==19.4.5

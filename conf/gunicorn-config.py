@@ -11,6 +11,6 @@ certfile = '/tmp/ssl_certificate.crt'
 with open(certfile, 'w') as certf:
     certf.write(os.environ.get('SSL_CERTIFICATE', ''))
 
-ca_certs = 'conf/mitCA.crt'
+ca_certs = 'conf/mitca.pem'
 
 cert_reqs = ssl.CERT_OPTIONAL

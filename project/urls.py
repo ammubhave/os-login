@@ -9,8 +9,6 @@ urlpatterns = [
     url(r'^accounts/login/$', auth_views.login, { 'template_name': 'login.html' }, name='login'),
     url(r'^accounts/logout/$', auth_views.logout, { 'next_page': '/' }, name='logout'),
 
-    url(r'.well-known/acme-challenge/7XrmCIHbJsfKYsdByKtYwssdeI0h3TmRoddSB2TQ350',
-        TemplateView.as_view(template_name='7XrmCIHbJsfKYsdByKtYwssdeI0h3TmRoddSB2TQ350')),
     url(r'^', include('oidc_provider.urls', namespace='oidc_provider')),
 
     url(r'^admin/', include(admin.site.urls)),

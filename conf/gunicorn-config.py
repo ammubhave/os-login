@@ -14,3 +14,5 @@ with open(certfile, 'w') as certf:
 ca_certs = 'conf/mitca.pem'
 
 cert_reqs = ssl.CERT_OPTIONAL
+
+ciphers = 'SSLv3:SSLv2:TLSv1'

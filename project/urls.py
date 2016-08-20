@@ -9,7 +9,7 @@ urlpatterns = [
     url(r'^accounts/login/$', auth_views.login, { 'template_name': 'login.html' }, name='login'),
     url(r'^accounts/logout/$', auth_views.logout, { 'next_page': '/' }, name='logout'),
 
-    url(r'.well-known/acme-challenge/w0b1ixLKVtuyJKE9FSh39UpaWhpHBk9yG6Segp0s2lA',
+    url(r'.well-known/acme-challenge/v0L2ghJZmU4TqPpO4WZYiXbYdP3gZ7K5tb8oAwCG9nA',
         TemplateView.as_view(template_name='v0L2ghJZmU4TqPpO4WZYiXbYdP3gZ7K5tb8oAwCG9nA')),
     url(r'^', include('oidc_provider.urls', namespace='oidc_provider')),
 
